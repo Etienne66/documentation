@@ -135,41 +135,68 @@ The following changes will be required regardless of your selected Webserver.
    - Base (include all items)
      - Libs
        - libcairo2
-         - libcrypt0
-         - libfontconfig-common
-         - libfontconfig1
-         - libfreetype6
-         - libgcrypt20
-         - libgd3
-         - libglib2.0_0
-         - libmariadb-devel
-         - libmysqlclient18
-         - libssl1.0
-         - libpango1.0_0
-         - libpng16
-         - libreadline7
-         - zlib-devel
-         - zlib0
-       - Devel
-         - autoconf
-         - automake
-         - binutils
-         - clang
-         - cygwin-devel
-         - gcc-core
-         - gcc-g++
-         - help2man
-         - libargp
-         - libltdl7
-         - libtool
-         - net-snmp-devel
-         - patch
-         - texinfo
-         - w32api-headers
-         - w32api-runtime
-         - windows-default-manifest
-       - Web
-         - wget
+       - libcrypt0
+       - libdbi-devel (needed to compile rrdtool with libDBI support)
+       - libfontconfig-common
+       - libfontconfig1
+       - libfreetype6
+       - libgcrypt20
+       - libgd3
+       - libglib2.0-devel (needed to compile rrdtool)
+       - libglib2.0_0
+       - libgtk3-devel (needed to compile rrdtool with tcl support)
+       - libgtk3_0 (needed to compile rrdtool with tcl support)
+       - libmariadb-devel
+       - libmysqlclient18
+       - libssl1.0
+       - libpango1.0-devel (needed to compile rrdtool)
+       - libpango1.0_0
+       - libpng-devel (needed to compile rrdtool)
+       - libpng16
+       - libreadline7
+       - libxml2 (needed to compile rrdtool)
+       - libxml2-devel (needed to compile rrdtool)
+       - zlib-devel
+       - zlib0
+     - Devel
+       - autoconf
+       - automake
+       - binutils
+       - clang
+       - cygwin-devel
+       - gcc-core
+       - gcc-g++
+       - git (needed to retrieve rrdtool source)
+       - help2man
+       - libargp
+       - libltdl7
+       - libtool
+       - make (needed to compile rrdtool)
+       - net-snmp-devel
+       - patch
+       - texinfo
+       - w32api-headers
+       - w32api-runtime
+       - windows-default-manifest
+     - Lua
+       - lua-crypto-devel (needed to compile rrdtool with lua support)
+     - Net
+       - libwrap-devel (needed to compile rrdtool with libwrap support)
+     - Perl
+       - perl (needed to compile rrdtool with perl support)
+       - perl-JSON (needed to compile rrdtool with perl support)
+       - perl-YAML (needed to compile rrdtool with perl support)
+     - Python
+       - python-cairo-devel (needed to compile rrdtool with python support)
+       - python38-cairo (needed to compile rrdtool with python support)
+       - python38-devel (needed to compile rrdtool with python support)
+     - Ruby
+       - ruby (needed to compile rrdtool with ruby support)
+       - ruby-cairo-devel (needed to compile rrdtool with ruby support)
+       - ruby-devel (needed to compile rrdtool with ruby support)
+       - ruby-pango-devel (needed to compile rrdtool with ruby support)
+     - Web
+       - wget
 
 4. Add `c:\cygwin\bin` to your Windows System PATH environment variable.
 
